@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Online Food Ordering"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Food List -->
+    <ListView
+        android:id="@+id/lvFoodItems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvHeader"
+        android:layout_marginTop="16dp"/>
+
+    <!-- Cart Button -->
+    <Button
+        android:id="@+id/btnViewCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="View Cart"
+        android:layout_below="@id/lvFoodItems"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Place Order Button -->
+    <Button
+        android:id="@+id/btnPlaceOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Place Order"
+        android:layout_below="@id/btnViewCart"
+        android:layout_marginTop="8dp"/>
+
+</RelativeLayout>
+
